@@ -727,3 +727,117 @@ header {
         margin-top: 20px;
     }
 }
+
+/* Logo Design Section */
+.logo-design {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.logo-design .section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.logo-design-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-design-intro {
+    margin-bottom: 40px;
+}
+
+.logo-design-intro h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.logo-design-intro .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.logo-design-intro .cta-button {
+    background-color: orange;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.logo-design-intro .cta-button:hover {
+    background-color: darkorange;
+}
+
+.logo-design-process {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.process-step {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.process-step h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.process-step p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.logo-design-features {
+    text-align: left;
+}
+
+.logo-design-features h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.logo-design-features p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .process-step {
+        width: 100%;
+    }
+
+    .logo-design-intro h3 {
+        font-size: 20px;
+    }
+
+    .logo-design-intro .price {
+        font-size: 18px;
+    }
+
+    .logo-design-intro .cta-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
