@@ -95,6 +95,8 @@ header {
 
 
 /* CTA Button */
+
+
 .cta-button {
     background-color: #FF4C02;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
@@ -111,62 +113,58 @@ header {
     /* Slightly darker shade on hover */
 }
 
-/* Featured Product Section */
+
+/* Featured Products Section */
 .featured-products {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 20px;
+    padding: 50px 620px;
     background-color: #f9f9f9;
     text-align: center;
 }
 
-.section-title {
+.featured-products .section-title {
     font-size: 36px;
     margin-bottom: 40px;
     color: #333;
-    background-color: #f9f9f9;
-    text-align: center;
 }
 
 .product {
+    display: flex;
+    align-items: center;
     background-color: white;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-    margin: 20px 0;
+    margin: 20px auto;
+    /* Center the product card */
+    max-width: 800px;
+    overflow: hidden;
 }
 
 .product img {
-    width: 100%;
+    width: 40%;
     height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    object-fit: cover;
 }
 
-.product h3 {
+.product-content {
+    width: 60%;
+    padding: 20px;
+    text-align: left;
+}
+
+.product-content h3 {
     font-size: 24px;
     margin-bottom: 15px;
     color: #333;
 }
 
-.product p {
+.product-content p {
     font-size: 16px;
     color: #666;
     margin-bottom: 20px;
 }
 
-.product .price {
-    font-size: 20px;
-    font-weight: bold;
-    color: #FF4C02;
-    margin-bottom: 20px;
-}
-
-.order-button {
-    background-color: #FF4C02;
+.product-content .order-button {
+    background-color: orange;
     color: white;
     padding: 10px 20px;
     font-size: 16px;
@@ -175,8 +173,33 @@ header {
     transition: background-color 0.3s ease;
 }
 
-.order-button:hover {
-    background-color: #FF4C02;
+.product-content .order-button:hover {
+    background-color: darkorange;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .featured-products {
+        padding: 50px 20px;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+
+    .product {
+        flex-direction: column;
+        max-width: 90%;
+        /* Adjust width for smaller screens */
+    }
+
+    .product img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .product-content {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* Testimonials Section */
@@ -375,7 +398,7 @@ header {
 
 .carousel-item img {
     width: 100%;
-    max-width: 300px;
+    max-width: 500px;
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
