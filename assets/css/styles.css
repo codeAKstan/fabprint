@@ -16,7 +16,7 @@ header {
 }
 
 .logo img {
-    height: 50px;
+    height: 70px;
     width: auto;
 }
 
@@ -337,6 +337,67 @@ header {
 .contact-item p {
     font-size: 16px;
     color: #666;
+}
+
+/* Best Selling Section */
+.best-selling {
+    padding: 40px 20px;
+    background-color: #000;
+    text-align: center;
+}
+
+.best-selling .section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #fff;
+    background-color: #000;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.carousel-item p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.carousel-item .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-width: 200px;
+    }
 }
 
 /* Footer Section */
