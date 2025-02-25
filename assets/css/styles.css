@@ -75,7 +75,7 @@ header {
 /* Hero Section */
 .hero {
     background-image: url('../images/hero-background.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 500px;
@@ -96,7 +96,7 @@ header {
 
 /* CTA Button */
 .cta-button {
-    background-color: orange;
+    background-color: #FF4C02;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     color: white;
     padding: 15px 30px;
@@ -107,7 +107,7 @@ header {
 }
 
 .cta-button:hover {
-    background-color: darkorange;
+    background-color: #FF4C02;
     /* Slightly darker shade on hover */
 }
 
@@ -161,12 +161,12 @@ header {
 .product .price {
     font-size: 20px;
     font-weight: bold;
-    color: orange;
+    color: #FF4C02;
     margin-bottom: 20px;
 }
 
 .order-button {
-    background-color: orange;
+    background-color: #FF4C02;
     color: white;
     padding: 10px 20px;
     font-size: 16px;
@@ -176,7 +176,7 @@ header {
 }
 
 .order-button:hover {
-    background-color: darkorange;
+    background-color: #FF4C02;
 }
 
 /* Testimonials Section */
@@ -222,56 +222,41 @@ header {
     color: #999;
 }
 
-/* A.N.A. Ask Section */
+/* A.F.A. Ask Section */
 .ana-ask {
-    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
     background-color: #fff;
-    text-align: center;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
-.ana-ask-content {
-    max-width: 800px;
-    margin: 0 auto;
+.ana-ask-left {
+    max-width: 50%;
+    text-align: left;
 }
 
-.ana-ask h2 {
+.ana-ask-left h1 {
     font-size: 36px;
-    color: #333;
+    color: #000;
     margin-bottom: 20px;
 }
 
-.ana-ask h3 {
-    font-size: 28px;
-    color: orange;
-    margin-bottom: 15px;
-}
-
-.reminder-text {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.reminder-details {
-    font-size: 20px;
+.ana-ask-left p {
+    font-size: 16px;
     color: #666;
     margin-bottom: 20px;
 }
 
-.reminder-details span {
-    color: orange;
+.ana-ask-left span {
+    color: #FF4C02;
     font-weight: bold;
 }
 
-.ana-description {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 30px;
-    line-height: 1.6;
-}
-
-.ana-ask .cta-button {
-    background-color: orange;
+.ana-ask-left .cta-button {
+    background-color: #FF4C02;
     color: white;
     padding: 15px 30px;
     font-size: 18px;
@@ -280,8 +265,38 @@ header {
     transition: background-color 0.3s ease;
 }
 
-.ana-ask .cta-button:hover {
-    background-color: darkorange;
+.ana-ask-left .cta-button:hover {
+    background-color: #FF4C02;
+}
+
+.ana-ask-right {
+    max-width: 50%;
+    text-align: right;
+}
+
+.ana-ask-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .ana-ask {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ana-ask-left,
+    .ana-ask-right {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .ana-ask-right img {
+        margin-top: 20px;
+    }
 }
 
 /* Contact Support Section */
@@ -370,7 +385,7 @@ header {
 }
 
 .footer-section ul li a:hover {
-    color: orange;
+    color: #FF4C02;
 }
 
 .footer-bottom {
