@@ -10,12 +10,15 @@
 
 <body>
     <header>
-        <div class="logo"><img src="assets/images/FabPrint-mainLogo-png.png" alt="logo"></div>
+        <div class="logo"><img src="assets/images/FabPrint-mainLogo-png.png" alt="logo"
+                onclick="location.href='index.html'"></div>
+        <p class="desktop-nav"><b>Contact: <span style="color: #FF4C02;">09028746777</span></b></p>
+        <input type="text" placeholder="Looking for something... " class="desktop-nav"
+            style="border-radius: 15px; padding: 5px; width: 340px; outline: none; border: .5px solid black;">
         <nav class="desktop-nav">
             <ul>
                 <li><a href="#">All Products</a></li>
                 <li><a href="#">Logo Design</a></li>
-                <li><a href="#">Wedding Shop</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
@@ -35,5 +38,96 @@
             <li><a href="#">Contact us</a></li>
         </ul>
     </nav>
+    <main>
+        <section class="contact-us">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-inf">
+                    <h3>Fill up the form and our team will get back to you within 24 hours.</h3>
+                    <p><strong>📍 Address:</strong> 7, Onuiyi Street, Nsukka-Enugu, Nigeria.</p>
+                    <p>📞 Phone Number: +234 806 610 2168</p>
+                    <p>📧 Email: info@fabprint.com</p>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your message" rows="5"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">SEND MESSAGE</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FabPrints</h3>
+                    <p>FabPrints is a renowned name in the field of offset, digital, and fleet printing services.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Career</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Paper Quality</a></li>
+                        <li><a href="#">Our Guarantees Statement</a></li>
+                        <li><a href="#">Startfile FAQ’s</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">How it Works</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Font License</a></li>
+                        <li><a href="#">Image License</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Delivery</h3>
+                    <ul>
+                        <li><a href="#">DHL</a></li>
+                        <li><a href="#">Track My Order</a></li>
+                        <li><a href="#">Become a Readlier</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">FabPrints/Courier</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 FABPRINT PRINTING SOLUTIONS. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let currentIndex = 0;
+            const carouselInner = document.querySelector('.carousel-inner');
+            const carouselItems = document.querySelectorAll('.carousel-item');
+            const totalItems = carouselItems.length;
+
+            function moveToNextSlide() {
+                currentIndex = (currentIndex + 1) % totalItems;
+                const offset = -currentIndex * 100;
+                carouselInner.style.transform = `translateX(${offset}%)`;
+            }
+
+            setInterval(moveToNextSlide, 5000);
+        });
+    </script>
+    <script src="assets/script/script.js"></script>
+</body>
 
 </html>

@@ -425,7 +425,7 @@ header {
 
 /* Footer Section */
 .footer {
-    background-color: #333;
+    background-color: #000;
     color: white;
     padding: 40px 20px;
 }
@@ -501,6 +501,8 @@ header {
     .product {
         margin: 10px;
     }
+
+
 }
 
 @media (max-width: 768px) {
@@ -514,5 +516,122 @@ header {
 
     .mobile-nav.active {
         display: block;
+    }
+
+    .testimonial {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        width: 100%;
+        margin: 20px auto;
+        text-align: left;
+    }
+}
+
+/* Contact Us Section */
+.contact-us {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact-us .section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-inf {
+    width: 40%;
+    text-align: left;
+    /* background-color: #000; */
+    padding: 10px;
+}
+
+.contact-inf h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #b1abab;
+}
+
+.contact-inf p {
+    font-size: 16px;
+    color: #b1abab;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    width: 50%;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: orange;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: darkorange;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-inf,
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-inf {
+        margin-bottom: 20px;
     }
 }
