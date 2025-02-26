@@ -134,7 +134,6 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    /* Center the product card */
     max-width: 800px;
     overflow: hidden;
 }
@@ -164,7 +163,7 @@ header {
 }
 
 .product-content .order-button {
-    background-color: orange;
+    background-color: #FF4C02;
     color: white;
     padding: 10px 20px;
     font-size: 16px;
@@ -174,7 +173,7 @@ header {
 }
 
 .product-content .order-button:hover {
-    background-color: darkorange;
+    background-color: #FF4C02;
 }
 
 /* Responsive Layout */
@@ -413,7 +412,7 @@ header {
 .carousel-item .price {
     font-size: 20px;
     font-weight: bold;
-    color: orange;
+    color: #FF4C02;
 }
 
 /* Responsive Layout */
@@ -606,7 +605,7 @@ header {
 }
 
 .submit-button {
-    background-color: orange;
+    background-color: #FF4C02;
     color: white;
     padding: 15px 30px;
     font-size: 16px;
@@ -617,7 +616,7 @@ header {
 }
 
 .submit-button:hover {
-    background-color: darkorange;
+    background-color: #FF4C02;
 }
 
 /* Responsive Layout */
@@ -763,12 +762,12 @@ header {
 .logo-design-intro .price {
     font-size: 20px;
     font-weight: bold;
-    color: orange;
+    color: #FF4C02;
     margin-bottom: 20px;
 }
 
 .logo-design-intro .cta-button {
-    background-color: orange;
+    background-color: #FF4C02;
     color: white;
     padding: 15px 30px;
     font-size: 16px;
@@ -778,7 +777,7 @@ header {
 }
 
 .logo-design-intro .cta-button:hover {
-    background-color: darkorange;
+    background-color: #FF4C02;
 }
 
 .logo-design-process {
