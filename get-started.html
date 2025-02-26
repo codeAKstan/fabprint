@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FABPRINT SOLUTIONS</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        /* All Products Section */
+        .all-products {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .black {
+            background-color: #000;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .all-products .section-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #f9f9f9;
+        }
+
+        .all-products .section-subtitle {
+            font-size: 18px;
+            color: #f9f9f9;
+            margin-bottom: 40px;
+        }
+
+        .search-bar {
+            max-width: 600px;
+            margin: 0 auto 40px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .search-button {
+            background-color: #FF4C02;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-button:hover {
+            background-color: #e04300;
+        }
+
+        .product-categories {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .category {
+            margin-bottom: 40px;
+        }
+
+        .category h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: left;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            margin-bottom: 15px;
+        }
+
+        .product-item {
+            background-color: white;
+            padding: 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: calc(33.33% - 20px);
+            text-align: left;
+            overflow: hidden;
+        }
+
+        .product-item h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+            padding: 0 15px;
+        }
+
+        .product-item .price {
+            font-size: 16px;
+            color: #FF4C02;
+            margin-bottom: 15px;
+            padding: 0 15px;
+        }
+
+        .product-item .order-button {
+            background-color: #FF4C02;
+            color: white;
+            padding: 10px 20px;
+            font-size: 14px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin: 0 15px 15px;
+            text-align: center;
+        }
+
+        .product-item .order-button:hover {
+            background-color: #e04300;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .product-item {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="assets/images/FabPrint-mainLogo-png.png" alt="logo"
+                onclick="location.href='index.html'"></div>
+        <p class="desktop-nav"><b>Contact: <span style="color: #FF4C02;">+234 806 610 2168</span></b></p>
+        <input type="text" placeholder="Looking for something... " class="desktop-nav"
+            style="border-radius: 15px; padding: 12px 8px; width: 340px; outline: none; border: .5px solid #FF4C02;">
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="logo-design.html">Logo Design</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="get-started.html" class="cta-button">Get Started</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="logo-design.html">Logo Design</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="get-started.html" class="cta-button">Get Started</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="all-products">
+            <div class="black">
+                <h2 class="section-title">All Products, At a Glance</h2>
+                <p class="section-subtitle">We have provided the best printing services to the brands below and 10,340+
+                    businesses nationwide, and we are looking to have you as a client.</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products" class="search-input">
+                    <button class="search-button">Search</button>
+                </div>
+            </div>
+            <div class="product-categories">
+                <!-- Business Cards -->
+                <div class="category">
+                    <h3>BUSINESS CARDS</h3>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <img src="assets/images/Business-cards.png" alt="E-Complimentary Card Design">
+                            <h4>E-Complimentary Card Design</h4>
+                            <p class="price">₦5,000.00</p>
+                            <a href="#" class="order-button">Order Now</a>
+                        </div>
+                        <div class="product-item">
+                            <img src="assets/images/Business-cards.png" alt="E-Complimentary Card Design">
+                            <h4>Square Business Cards (2 Slides)</h4>
+                            <p class="price">₦5,000.00</p>
+                            <a href="#" class="order-button">Order Now</a>
+                        </div>
+                        <div class="product-item">
+                            <img src="assets/images/Business-cards.png" alt="E-Complimentary Card Design">
+                            <h4>Square Business Cards (1 Slide)</h4>
+                            <p class="price">₦5,000.00</p>
+                            <a href="#" class="order-button">Order Now</a>
+                        </div>
+                        <div class="product-item">
+                            <img src="assets/images/Business-cards.png" alt="E-Complimentary Card Design">
+                            <h4>Professional Signature + Card</h4>
+                            <p class="price">₦5,000.00</p>
+                            <a href="#" class="order-button">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banners & Large Format -->
+                <div class="category">
+                    <h3>BANNERS & LARGE FORMAT</h3>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <img src="assets/images/Kudos Bus side 2.jpg" alt="E-Complimentary Card Design">
+                            <h4>A-F Format Signs</h4>
+                            <p class="price">₦10,000.00</p>
+                            <a href="#" class="order-button">Order Now</a>
+                        </div>
+                        <div class="product-item">
+                            <img src="assets/images/Kudos Bus front.jpg" alt="E-Complimentary Card Design">
+                            <h4>Bookshop Banners</h4>
+                            <p class="price">₦10,000.00</p>
+                            <a href="#" class="order-button">Order Now</a>
+                        </div>
+                        <div class="product-item">
+                            <img src="assets/images/Ella_Varieties Logo.jpg" alt="E-Complimentary Card Design">
+                            <h4>Dummy Cheque</h4>
+                            <p class="price">₦10,000.00</p>
+                            <a href="#" class="order-button">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branded Envelopes -->
+                <div class="category">
+                    <h3>BRANDED ENVELOPES</h3>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <img src="assets/images/Business-cards.png" alt="E-Complimentary Card Design">
+                            <h4>BL (Small) Envelopes</h4>
+                            <p class="price">₦7,000.00</p>
+                            <a href="#" class="order-button">Order Now</a>
+                        </div>
+                        <div class="product-item">
+                            <img src="assets/images/Business-cards.png" alt="E-Complimentary Card Design">
+                            <h4>CL (Big A4) Envelopes</h4>
+                            <p class="price">₦7,000.00</p>
+                            <a href="#" class="order-button">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branded Notepads & Jotters -->
+                <div class="category">
+                    <h3>BRANDED NOTEPADS & JOTTERS</h3>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <img src="assets/images/Capitaine Notepade_mockup 2.jpg" alt="E-Complimentary Card Design">
+                            <h4>A5 Notepads</h4>
+                            <p class="price">₦8,000.00</p>
+                            <a href="#" class="order-button">Order Now</a>
+                        </div>
+                        <div class="product-item">
+                            <img src="assets/images/Ajile jotter temp.jpg" alt="E-Complimentary Card Design">
+                            <h4>A4 Notepads</h4>
+                            <p class="price">₦8,000.00</p>
+                            <a href="#" class="order-button">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FabPrints</h3>
+                    <p>FabPrints is a renowned name in the field of offset, digital, and fleet printing services.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Career</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Paper Quality</a></li>
+                        <li><a href="#">Our Guarantees Statement</a></li>
+                        <li><a href="#">Startfile FAQ’s</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">How it Works</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Font License</a></li>
+                        <li><a href="#">Image License</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Delivery</h3>
+                    <ul>
+                        <li><a href="#">DHL</a></li>
+                        <li><a href="#">Track My Order</a></li>
+                        <li><a href="#">Become a Readlier</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">FabPrints/Courier</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 FABPRINT PRINTING SOLUTIONS. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let currentIndex = 0;
+            const carouselInner = document.querySelector('.carousel-inner');
+            const carouselItems = document.querySelectorAll('.carousel-item');
+            const totalItems = carouselItems.length;
+
+            function moveToNextSlide() {
+                currentIndex = (currentIndex + 1) % totalItems;
+                const offset = -currentIndex * 100;
+                carouselInner.style.transform = `translateX(${offset}%)`;
+            }
+
+            setInterval(moveToNextSlide, 5000);
+        });
+    </script>
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>
